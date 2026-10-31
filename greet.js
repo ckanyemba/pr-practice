@@ -8,4 +8,15 @@ function greet(name) {
   return `Good ${timeOfDay}, ${name}!`;
 }
 
+function reply(message) {
+  if (message.toLowerCase().includes("hello")) {
+    return "Hello! How can I assist you today?";
+    } else if (message.toLowerCase().includes("goodbye")) {
+    return "Goodbye! Have a great day!";
+    } else {
+    return "I'm here to help! What can I do for you?";
+  }
+}
+
 console.log(greet("Apadana"));
+console.log(reply("Hello, how are you?"));
